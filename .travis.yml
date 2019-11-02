@@ -1,5 +1,8 @@
 language: generic
 install: 
+deploy:
+  provider: heroku
+  app: pgr301-exam-devops-app-dev
 script:
 - "./build.sh"
 env:
