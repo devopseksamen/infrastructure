@@ -55,3 +55,14 @@ resource "heroku_pipeline_coupling" "production" {
     pipeline = "${heroku_pipeline.exam-app.id}"
     stage    = "production"
 }
+
+# Build code & release to the app
+resource "heroku_build" "example" {
+  app = "${heroku_app.staging.name}"
+  buildpacks = ["https://github.com/mars/create-react-app-buildpack.git"]
+
+  source = {
+    url = "https://github.com/mars/cra-example-app/archive/v2.1.1.tar.gz"
+    version = "2.1.1"
+  }
+}
