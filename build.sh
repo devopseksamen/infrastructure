@@ -4,8 +4,6 @@ wget https://releases.hashicorp.com/terraform/0.12.13/terraform_0.12.13_linux_am
 unzip terraform_0.12.13_linux_amd64.zip
 chmod +x terraform
 
-heroku buildpacks:add https://github.com/weibeld/heroku-buildpack-run.git
-
 ./terraform init
 ./terraform validate
 ./terraform plan
