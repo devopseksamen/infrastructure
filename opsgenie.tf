@@ -1,6 +1,6 @@
 
 resource "opsgenie_user" "arya" {
-  username  = "thanh_t@hotmail.com"
+  username  = "test1@testing.com"
   full_name = "Arya Stark"
   role      = "User"
   locale    = "no_NO"
@@ -8,7 +8,7 @@ resource "opsgenie_user" "arya" {
 }
 
 resource "opsgenie_user" "sansa" {
-  username  = "gulasiater@hotmail.com"
+  username  = "test2@testing.com"
   full_name = "Sansa Stark "
   role      = "User"
   locale    = "no_NO"
@@ -16,7 +16,7 @@ resource "opsgenie_user" "sansa" {
 }
 
 resource "opsgenie_user" "jon" {
-  username  = "gullgravern@gmail.com"
+  username  = "test3@testing.com"
   full_name = "Jon Snow"
   role      = "User"
   locale    = "no_NO"
@@ -24,8 +24,8 @@ resource "opsgenie_user" "jon" {
 }
 
 
-resource "opsgenie_team" "theOne" {
-  name        = "No one above"
+resource "opsgenie_team" "theChosen" {
+  name        = "The chosen ones"
   description = "This team deals with all the things"
 
   member {
