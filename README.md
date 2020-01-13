@@ -5,7 +5,7 @@ This is the infrastructure repository for the devops exam 2019.
 Link to the application repository:
 
 ~~~~
-https://github.com/devopseksamen/applikasjon
+https://github.com/thatra94/applikasjon
 ~~~~
 
 To run on local terraform:
